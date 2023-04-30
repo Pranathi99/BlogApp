@@ -1,0 +1,63 @@
+<div class="container shadow p-3 mb-5 bg-body rounded">
+  <div class="row" style="width: inherit">
+    <article class="col-lg-7 col-md-6 col-sm-12 mr-2">
+      <h1>{{ post.title }}</h1>
+      <img src="{{ post.imgUrl }}" alt="food_image" class="img-fluid" />
+      <div class="content-container">
+        <p id="content">{{ post.content }}</p>
+      </div>
+    </article>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="row" style="width: 60vh; justify-content: end">
+        <button
+          class="btn btn-info"
+          style="width: 5rem; margin-right: 1rem"
+          routerLink="../../editPost/{{ post.id }}"
+        >
+          Edit
+        </button>
+        <button
+          class="btn btn-danger"
+          style="width: 5rem"
+          (click)="deletePost()"
+        >
+          Delete
+        </button>
+      </div>
+      <div class="row" style="width: 150vh">
+        <aside
+          class="shadow bg-body rounded"
+          style="
+            width: 37.333333%;
+            margin-top: 25vh;
+            margin-bottom: 30vh;
+            padding-top: 10vh;
+          "
+        >
+          <section class="bg-gray-200 text-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10rem"
+              height="10rem"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+            <p id="creator">Hi! I'm {{ post.by }}</p>
+            <p id="about">
+              I'm a former 4th grade teacher, now full time blogger. My husband
+              Bjork and I live in Minnesota. Favorite things include my camera,
+              lake days, and dark chocolate.
+            </p>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>

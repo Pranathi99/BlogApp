@@ -1,0 +1,39 @@
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    height:15rem;
+    width: 15rem;
+}
+
+
+/* .card .card-stacked {
+    width: inherit;
+    height: inherit;
+
+} */
+
+.card .card-content .card-title {
+    font-weight: bold;
+}
+
+.card .card-content .card-text {
+    margin-top: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+/* .card-content{
+    margin-left: 30px;
+    width: 130%;
+} */
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

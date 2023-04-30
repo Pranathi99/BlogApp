@@ -1,0 +1,12 @@
+.logo {
+    font-family: Brush Script MT,
+        Brush Script Std,
+        cursive;
+    font-size: 3rem;
+}
+
+.sidenav-container{
+position: fixed;
+top:0;
+left: 0;
+}

@@ -1,0 +1,110 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <p class="logo">Food Stories</p>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="#home">Home</a>
+        <!-- <a class="nav-link" routerLink="/posts">Explore</a> -->
+        <a class="nav-link" href="#contactus">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container" id="home">
+  <div class="row">
+    <div class="col-lg-3 col-sm-12 col-md-6 ml-1 mt-2">
+      <div class="card">
+        <img
+          src="assets/images/home_1.jpg"
+          class="card-img-top img-fluid"
+          alt="foodItem"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12 col-md-6 ml-1 mt-2">
+      <div class="card">
+        <img
+          src="assets/images/home_2.jpeg"
+          class="card-img-top img-fluid"
+          alt="foodItem"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12 col-md-6 ml-1 mt-2">
+      <div class="card">
+        <img
+          src="assets/images/home_3.jpg"
+          class="card-img-top img-fluid"
+          alt="foodItem"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12 col-md-6 ml-1 mt-2">
+      <div class="card">
+        <img
+          src="assets/images/home_4.jpg"
+          class="card-img-top img-fluid"
+          alt="foodItem"
+        />
+      </div>
+    </div>
+  </div>
+
+  <p id="about">Simple and easy recipes made for everyday life....</p>
+
+  <p id="desc">
+    From traditional dishes to innovative fusion cuisines, experience a wide
+    range of culinary delights from different cultures, regions and traditions.
+    Discover new ingredients, techniques and flavors, learn about the history
+    and cultural significance of the dishes, and get tips and tricks for cooking
+    and serving them.
+  </p>
+</div>
+
+<div class="container shadow-lg p-3 mb-5 bg-body rounded" id="contactus">
+  <p style="text-align: center; font-size: 1.8rem">Contact Us</p>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        placeholder="Enter Name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="Enter email"
+      />
+      <small id="emailHelp" class="form-text text-muted"
+        >We'll never share your email with anyone else.</small
+      >
+    </div>
+    <div class="form_group">
+      <label for="message">Message</label>
+      <textarea
+        type="text"
+        class="form-control"
+        id="message"
+        placeholder="Enter message"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary m-2">Submit</button>
+  </form>
+</div>
+
+<router-outlet></router-outlet>

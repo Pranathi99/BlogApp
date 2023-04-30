@@ -1,0 +1,37 @@
+.container{
+    width: 150vh;
+    margin-left: -10px;
+    margin-right:20px;
+}
+
+.img-fluid{
+    height:100vh;
+    width: 100vh;
+}
+
+h1{
+    font-family: Domaine Display, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 2.5rem;
+}
+
+#content{
+    font-family: Bitter, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 1.2rem;
+    white-space: pre-wrap;
+}
+
+#about{
+    font-family:Bitter,
+        Georgia,
+        Cambria,
+        Times New Roman,
+        Times,
+        serif
+}
+
+#creator{
+
+    font-family: Arvo, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 1.3rem;
+        
+}

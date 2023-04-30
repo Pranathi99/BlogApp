@@ -1,0 +1,35 @@
+.logo{
+    font-family: Domaine Display, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 3rem;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+img{
+    height: 60vh;
+}
+
+#about{
+    font-family: Bitter,
+            Georgia,
+            Cambria,
+            Times New Roman,
+            Times,
+            serif;
+    margin: 2rem 15rem;
+    font-size: 1.5rem;
+}
+
+#desc{
+    font-family: Bitter,
+            Georgia,
+            Cambria,
+            Times New Roman,
+            Times,
+            serif;
+        margin: 3rem 1rem;
+        font-size: 1.5rem;
+}
