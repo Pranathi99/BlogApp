@@ -32,7 +32,7 @@ export class ViewPostComponent implements OnInit {
   deletePost(){
       this.postService.deletePost(this.id)
       .subscribe((responseData)=>{
-        this.router.navigate(['myPosts']);
+        this.router.navigate(['/myPosts']);
       });
   }
 

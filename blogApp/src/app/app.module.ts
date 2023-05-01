@@ -36,16 +36,16 @@ const routes:Routes=[
     component:GetPostsComponent,
   },
   {
-    path:'latestPosts',
-    component:LatestPostsComponent,
-  },
-  {
     path:'viewPost/:id',
     component:ViewPostComponent,
   },
   {
     path:'editPost/:id',
     component:EditPostComponent,
+  },
+  {
+    path:'latestPosts',
+    component:LatestPostsComponent,
   },
 ];
 
@@ -60,7 +60,7 @@ const routes:Routes=[
     PostComponent,
     ViewPostComponent,
     EditPostComponent,
-    LatestPostsComponent
+    LatestPostsComponent,
   ],
   imports: [
     BrowserModule,

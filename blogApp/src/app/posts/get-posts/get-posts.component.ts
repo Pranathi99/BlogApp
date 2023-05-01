@@ -10,6 +10,7 @@ import { postData } from '../postData.model';
 export class GetPostsComponent implements OnInit {
 
   posts:any=[];
+  isNext:boolean=false;
 
   constructor(private postService:PostsService) { }
 
