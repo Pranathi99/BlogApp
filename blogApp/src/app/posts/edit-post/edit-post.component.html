@@ -1,73 +1,87 @@
-<div class="container" style="position: relative; left: -50px" *ngIf="isLoaded">
-  <form #newPostForm="ngForm" [formGroup]="myForm">
-    <div class="form-group">
-      <label for="title">Title</label>
-      <input
-        type="text"
-        id="title"
-        class="form-control"
-        name="title"
-        formControlName="title"
-        required
-      />
-    </div>
-    <div class="form-group">
-      <label for="category">Category</label>
-      <input
-        type="text"
-        id="category"
-        class="form-control"
-        name="category"
-        formControlName="category"
-        required
-      />
-    </div>
-    <div class="form-group">
-      <label for="content">Content</label>
-      <textarea
-        id="content"
-        class="form-control"
-        cols="50"
-        rows="10"
-        name="content"
-        formControlName="content"
-        required
-      ></textarea>
-    </div>
-    <div class="form-group">
-      <label for="by">Blog by : </label>
-      <input
-        type="text"
-        id="by"
-        class="form-control"
-        name="by"
-        formControlName="by"
-        required
-      />
-    </div>
-    <div class="form-control">
-      <label for="imgUrl">Blog Image</label>
-      <input
-        type="file"
-        class="form-control"
-        id="imgUrl"
-        name="imgUrl"
-        (change)="onFileSelected($event)"
-      />
-      <img
-        src="{{ post.imgUrl }}"
-        alt="food"
-        style="height: 15vh; width: 15vh"
-      />
-      <span class="text-muted" style="font-size: 1rem"> *Existing image</span>
-    </div>
-    <button
-      class="btn btn-primary m-2"
-      type="submit"
-      [disabled]="!newPostForm.valid"
-      (click)="onEditPost(newPostForm.value, newPostForm)"
+<div class="row">
+  <div class="col-3">
+    <app-sidenav></app-sidenav>
+  </div>
+
+  <div class="col-9">
+    <div
+      class="container"
+      style="position: relative; left: -50px"
+      *ngIf="isLoaded"
     >
-      Edit Post
-    </button>
-  </form>
+      <form #newPostForm="ngForm" [formGroup]="myForm">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            class="form-control"
+            name="title"
+            formControlName="title"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <input
+            type="text"
+            id="category"
+            class="form-control"
+            name="category"
+            formControlName="category"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          <textarea
+            id="content"
+            class="form-control"
+            cols="50"
+            rows="10"
+            name="content"
+            formControlName="content"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="by">Blog by : </label>
+          <input
+            type="text"
+            id="by"
+            class="form-control"
+            name="by"
+            formControlName="by"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="imgUrl">Blog Image</label>
+          <input
+            type="file"
+            class="form-control"
+            id="imgUrl"
+            name="imgUrl"
+            (change)="onFileSelected($event)"
+          />
+          <img
+            src="{{ post.imgUrl }}"
+            alt="food"
+            style="height: 15vh; width: 15vh"
+          />
+          <span class="text-muted" style="font-size: 1rem">
+            *Existing image</span
+          >
+        </div>
+        <button
+          class="btn btn-primary m-2"
+          type="submit"
+          [disabled]="!newPostForm.valid"
+          (click)="onEditPost(newPostForm.value, newPostForm)"
+        >
+          Edit Post
+        </button>
+      </form>
+    </div>
+  </div>
 </div>

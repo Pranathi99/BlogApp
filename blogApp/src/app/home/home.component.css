@@ -33,3 +33,8 @@ img{
         margin: 3rem 1rem;
         font-size: 1.5rem;
 }
+
+.about-container{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
