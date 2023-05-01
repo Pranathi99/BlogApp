@@ -16,11 +16,11 @@ isLoaded:boolean=false;
     .subscribe((responseData)=>{
       const arrayVal=Object.values(responseData);
       this.posts=arrayVal.sort((a,b)=>{
-        console.log(a.createdDate+" "+a.updatedDate+" "+b.createdDate+" "+b.updatedDate);
+        //console.log(a.createdDate+" "+a.updatedDate+" "+b.createdDate+" "+b.updatedDate);
         const val1=Math.max(Date.parse(a.createdDate),Date.parse(b.updatedDate));
-        console.log(val1);
+        //console.log(val1);
         const val2=Math.max(Date.parse(b.createdDate),Date.parse(b.updatedDate));
-        console.log(val2);
+        //console.log(val2);
         return val2-val1;
       }).slice(0,10);
       this.isLoaded=true;
